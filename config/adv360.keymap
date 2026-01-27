@@ -23,6 +23,20 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        extra-enter {
+            bindings = <&kp ENTER>;
+            key-positions = <55 56>;
+        };
+
+        extra-space {
+            bindings = <&kp SPACE>;
+            key-positions = <50 49>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
