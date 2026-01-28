@@ -16,8 +16,28 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick_tap_ms = <175>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             bindings = <&kp>, <&kp>;
+        };
+
+        hm_right: hm_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM_RIGHT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            hold-trigger-key-positions = <0 14 1 15 2 30 17 16 3 4 6 5 20 19 18 31 32 33 34 51 50 49 48 47 29 28 46 60 61 62 63 64 35 36 52 65 66 67>;
+            tapping-term-ms = <200>;
+        };
+
+        hm_left: hm_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM_LEFT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-trigger-key-positions = <8 9 10 11 12 13 22 23 24 25 26 27 40 41 42 43 44 45 54 55 56 57 58 59 70 71 72 73 74 75 37 38 53 68 69 7 21 39>;
         };
     };
 
